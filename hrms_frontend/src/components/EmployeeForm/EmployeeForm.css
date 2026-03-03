@@ -1,0 +1,119 @@
+.employee-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+
+/* LEFT IMAGE SIDE */
+.employee-image {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1497366216548-37526070297c")
+    center/cover no-repeat;
+  position: relative;
+  min-height: 320px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+}
+
+.overlay h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.overlay p {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* RIGHT FORM SIDE */
+.employee-form-section {
+  flex: 1.5;
+  padding: 40px;
+}
+
+.employee-form-section h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtext {
+  color: #6b7280;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* Button */
+.button-container {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+  transition: 0.3s;
+}
+
+.button-container button:hover {
+  transform: translateY(-2px);
+}
+
+.error {
+  grid-column: span 2;
+  color: red;
+  font-size: 13px;
+}

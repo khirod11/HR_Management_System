@@ -1,0 +1,151 @@
+.attendance-list-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Header */
+.list-header {
+  padding: 20px 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.list-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table thead {
+  background: #f9fafb;
+}
+
+.attendance-table th {
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.attendance-table td {
+  padding: 16px 20px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.attendance-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* attendance Info */
+.attendance-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.emp-name {
+  font-weight: 500;
+}
+
+.emp-email {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Role & Dept */
+.role-text {
+  font-weight: 500;
+}
+
+.dept-subtext {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Status */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+/* Actions */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #f1f5f9;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Footer */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.pagination button {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Empty */
+.empty-state {
+  text-align: center;
+  padding: 30px;
+  color: #9ca3af;
+}
