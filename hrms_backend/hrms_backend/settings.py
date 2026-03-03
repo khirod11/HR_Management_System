@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-mgp1o5t*hqm8d1p2**7l_4z$3yb#qewi=cu0_m%zsjp88m!we#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['hr-management-system-vg9v.onrender.com']
 
 # Application definition
 
@@ -52,6 +52,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://hrms_frontend.netlify.app"
 ]
 
 ROOT_URLCONF = 'hrms_backend.urls'

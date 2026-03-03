@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api/", // Replace with Render URL in production
+  baseURL: "https://hr-management-system-vg9v.onrender.com/api/", 
   headers: {
     "Content-Type": "application/json",
   },
