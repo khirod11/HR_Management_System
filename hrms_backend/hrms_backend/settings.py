@@ -29,11 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-DJANGO_SUPERUSER_USERNAME = admin
-DJANGO_SUPERUSER_EMAIL = admin@gmail.com
-DJANGO_SUPERUSER_PASSWORD = Admin@123
-
-
 # Application definition
 
 INSTALLED_APPS = [
